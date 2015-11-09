@@ -371,7 +371,7 @@ def sort_arrays_by_first(centers, clusters_list):
 def isodata_classification(img, parameters=None):
     """
     Classify a numpy 'img' using Isodata algorithm.
-    Parameters: a dictionary with the following keys.
+    Parameters:
             - img: an input numpy array that contains the image to classify.
             - parameters: a dictionary with the initial values.
               If 'parameters' are not specified, the algorithm uses the default
@@ -390,8 +390,7 @@ def isodata_classification(img, parameters=None):
                     THETA_C = 2
                   + threshold change in the clusters between each iter.
                     THETA_O = 0.01
-        Note: if some(or all) parameters are nos providen, default values
-              will be used.
+        Note: default values are used if some/all parameters are not provided.
     Returns:
             - img_class: a numpy array with the classification.
     """
